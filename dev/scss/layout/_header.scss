@@ -1,0 +1,34 @@
+/* =============
+    Header
+============= */
+
+#header{
+    div {
+        background-image: url('../img/hero-car.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+
+        @include md{
+            height: 512px;
+        } 
+
+        @include lg{
+            height: 800px;
+        }
+
+        h1{
+            text-align: 
+            start;
+            color: $beige;
+        }
+
+        hr{
+            background-color: $red;
+            height: 75px;
+            border:none;
+            align-content: flex-end;
+        }
+
+    }   
+}
