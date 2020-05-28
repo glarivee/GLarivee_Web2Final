@@ -468,6 +468,79 @@ footer div {
 /* =============
     Section 2
 ============= */
+#section-2 .grid-content {
+  display: grid;
+  grid-template-columns: 15px auto 10px;
+  grid-template-areas: ". section-2 ."; }
+  #section-2 .grid-content h1 {
+    text-align: justify;
+    color: #FBF2E9;
+    block-size: 50px;
+    background-color: #97132B; }
+  #section-2 .grid-content ul {
+    grid-area: section-2;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+    @media (min-width: 768px) {
+      #section-2 .grid-content ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "gallery-1" "gallery-2"  "gallery-3" "gallery-4"; } }
+    @media (min-width: 992px) {
+      #section-2 .grid-content ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "gallery-1" "gallery-2"  "gallery-3" "gallery-4"; } }
+    #section-2 .grid-content ul li {
+      background-size: cover;
+      height: 100%; }
+    #section-2 .grid-content ul #gallery-1 {
+      background-image: url("../img/parade.jpg");
+      background-position-y: -120px;
+      height: 500px;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #section-2 .grid-content ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 500px; } }
+      @media (min-width: 992px) {
+        #section-2 .grid-content ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 500px; } }
+    #section-2 .grid-content ul #gallery-2 {
+      background-image: url("../img/cars.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-2 .grid-content ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 500px; } }
+      @media (min-width: 992px) {
+        #section-2 .grid-content ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 500px; } }
+    #section-2 .grid-content ul #gallery-3 {
+      background-image: url("../img/band.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-2 .grid-content ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 500px; } }
+      @media (min-width: 992px) {
+        #section-2 .grid-content ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 500px; } }
+    #section-2 .grid-content ul #gallery-4 {
+      background-image: url("../img/pastamaking.jpg");
+      height: 500px; }
+      @media (min-width: 768px) {
+        #section-2 .grid-content ul #gallery-4 {
+          grid-area: gallery-4;
+          height: 500px; } }
+      @media (min-width: 992px) {
+        #section-2 .grid-content ul #gallery-4 {
+          grid-area: gallery-4;
+          height: 500px; } }
 /* =============
     Section 3
 ============= */
