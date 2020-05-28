@@ -1,3 +1,26 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    div {
+        
+        img{
+            box-align: center;
+            color: $beige;
+        }
+        
+        background-color: $red;
+        height: 25px;
+
+
+        @include md{
+            height: 25px;
+        } 
+
+        @include lg{
+            height: 50px;
+        }
+
+    }   
+}

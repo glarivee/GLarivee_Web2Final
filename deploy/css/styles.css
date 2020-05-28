@@ -343,7 +343,7 @@ ul {
     Typography
 ============= */
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Merriweather', serif; }
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -351,7 +351,8 @@ h1, h2, h3, h4 {
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Merriweather', sans-serif; }
 
 .section-title {
   font-weight: 300; }
@@ -391,21 +392,79 @@ textarea {
   @media (min-width: 992px) {
     #header div {
       height: 800px; } }
-  #header div h1 {
-    text-align: start;
-    color: #FBF2E9; }
-  #header div hr {
-    background-color: #97132B;
-    height: 75px;
-    border: none;
-    align-content: flex-end; }
+#header h1 {
+  text-align: center;
+  color: #FBF2E9;
+  block-size: 25px;
+  background-color: #97132B; }
 
 /* =============
     Footer
 ============= */
+footer div {
+  background-color: #97132B;
+  height: 25px; }
+  footer div img {
+    box-align: center;
+    color: #FBF2E9; }
+  @media (min-width: 768px) {
+    footer div {
+      height: 25px; } }
+  @media (min-width: 992px) {
+    footer div {
+      height: 50px; } }
 /* =============
     Section 1
 ============= */
+#section-1 #section-1-left {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-1-left .";
+  padding: 60px 0;
+  color: #000;
+  background-color: #FBF2E9; }
+  #section-1 #section-1-left > div {
+    grid-area: section-1-left; }
+
+#section-1 #section-1-img {
+  background-image: url("../img/bruscetta.jpg");
+  background-size: cover;
+  background-position-x: -150px;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    #section-1 #section-1-img {
+      height: 500px;
+      background-position-x: -180px; } }
+  @media (min-width: 992px) {
+    #section-1 #section-1-img {
+      height: 2040px;
+      background-position-x: -100px; } }
+@media (min-width: 768px) {
+  #section-1 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-1-img section-1-left"; }
+    #section-1 #section-1-img {
+      grid-area: section-1-img; }
+    #section-1 #section-1-left {
+      grid-area: section-1-left; } }
+
+@media (min-width: 992px) {
+  #section-1 {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-areas: "section-1-img section-1-left"; }
+    #section-1 #section-1-text {
+      grid-area: section-1-left; } }
+
+@media (min-width: 768px) {
+  #section-1 {
+    padding: 80px 0; } }
+
+@media (min-width: 992px) {
+  #section-1 {
+    padding: 60px 20px; } }
+
 /* =============
     Section 2
 ============= */

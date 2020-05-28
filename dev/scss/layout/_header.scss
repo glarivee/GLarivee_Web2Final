@@ -17,18 +17,13 @@
             height: 800px;
         }
 
-        h1{
-            text-align: 
-            start;
-            color: $beige;
-        }
-
-        hr{
-            background-color: $red;
-            height: 75px;
-            border:none;
-            align-content: flex-end;
-        }
 
     }   
+    h1{
+        text-align: 
+        center;
+        color: $beige;
+        block-size: 25px;
+        background-color: $red;
+    }
 }
