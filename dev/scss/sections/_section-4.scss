@@ -2,8 +2,19 @@
     Section 4
 ============= */
 #section-4{
-    .grid-content{
-        
+    background-color: $beige;
+    h1{
+        text-align: 
+        start;
+        color: $beige;
+        block-size: 50px;
+        background-color: $red;
     }
+    h2{
+        text-align: center;
+        color: $beige;
+        block-size: 75px;
+        background-color: $green;
 
+    }
 }

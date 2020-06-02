@@ -8,10 +8,10 @@ footer{
         img{
             box-align: center;
             color: $beige;
+            background-color: $red;
+            height: 50px;
         }
         
-        background-color: $red;
-        height: 25px;
 
 
         @include md{
