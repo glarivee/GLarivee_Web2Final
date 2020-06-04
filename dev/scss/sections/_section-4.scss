@@ -4,17 +4,58 @@
 #section-4{
     background-color: $beige;
     h1{
-        text-align: 
-        center;
         color: $beige;
-        block-size: 50px;
         background-color: $red;
-    }
-    h2{
         text-align: center;
-        color: $beige;
-        block-size: 75px;
-        background-color: $green;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
+        @include md{
+            font-size: 52px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        @include lg{
+            font-size: 70px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+    }
+
+    div{
+        p{
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 16px;
+
+            @include md{
+                padding-left: 50px;
+                padding-right: 50px;
+                font-size: 24px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            @include lg{
+                padding-left: 130px;
+                padding-right: 130px;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                font-size: 24px;
+            }
+        }
+
+        h2{
+            background-color: $green;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            color: $beige;
+            text-align: center;
+            font-size: 16px;
+        }
     }
 }

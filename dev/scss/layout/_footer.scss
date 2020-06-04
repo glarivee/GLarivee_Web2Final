@@ -5,11 +5,14 @@
 footer{
     div {
         
-        img{
+        #logo{
+            background-image: url('../img/logo.svg');
+            background-repeat: no-repeat;
+            background-position:center;
             box-align: center;
-            color: $beige;
             background-color: $red;
             height: 50px;
+
         }
         
 

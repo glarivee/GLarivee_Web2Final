@@ -3,69 +3,80 @@
 ============= */
 
 #section-1{ 
-    
     background-color: $beige;
-    
-    #section-1-left {
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-1-left .";
-        padding: 60px 0;
-        color: $black;
-        background-color: $beige;
 
-        >div{
-            grid-area: section-1-left ;
+
+    #section-1-content{
+        div{
+            padding-top: 20px;
+            aside{
+                background-image: url("../img/bruscetta.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 160px;
+                width: 160px;
+                margin-left: 150px;
+            }
         }
 
+        p{
+            padding-left: 45px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            font-size: 16px;
+
+            @include md{
+                padding-left: 45px;
+                padding-right: 90px;
+                padding-bottom: 100px;
+                padding-top: 100px;
+                text-align: left;
+            }
+
+            @include lg{
+                font-size: 24px;
+                padding-left: 60px;
+                padding-right: 60px;
+                padding-bottom: 115px;
+                padding-top: 115px;
+            }
+        }
     }
 
-    #section-1-img {
-        background-image: url('../img/bruscetta.jpg');
-        background-size: cover;
-        background-position-x: -150px;
-        background-repeat: no-repeat;
+
+
+
+
+
+    // #section-1-content{
+    //     @include md{
+    //         display: grid;
+    //         grid-template-columns: 40% columns;
+    //     }
         
-        @include md{
-            height: 500px;
-            background-position-x: -180px;
-        }
-
-        @include lg{
-            height: 2040px ;
-            background-position-x: -100px;
-        }
-    }
-
-    @include md{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "section-1-img section-1-left";
-
-        #section-1-img{
-            grid-area: section-1-img;
-        }
-        #section-1-left{
-            grid-area: section-1-left;
-        }
-
-    }
-
-    @include lg{
-        display: grid;
-        grid-template-columns: 25% auto;
-        grid-template-areas: "section-1-img section-1-left";
-
-        #section-1-text{
-            grid-area: section-1-left;
-        }
-    }
-
-    @include md{
-        padding: 80px 0;
-    }
-
-    @include lg{
-        padding: 60px 20px;
-    }
+    //     #section-1-container{
+    //         display: grid;
+    //         grid-gap: 20px;
+    //         grid-template-columns: 15px auto 15px;
+    //         grid-template-areas: ". section-2-content .";
+    //          padding-top: 30px;
+    //         @include md{
+    //             padding-top: 120px;
+    //         }
+    //         @include lg{
+    //             padding-top: 288px;
+    //         }
+    //     }
+    //     #section-1-text{
+    //             grid-area: section-2-content;
+    //             text-align: center;
+    //             p{
+    //                 font-size: 16px;
+    //             }
+    //             @include md{
+    //            text-align: left;
+    //      }      }
+    
+    // } 
 }

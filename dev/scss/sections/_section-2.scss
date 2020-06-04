@@ -1,117 +1,36 @@
 /* =============
     Section 2
 ============= */
+
 #section-2{
-
     background-color: $beige;
-    .grid-content{
-        h1{
-            text-align: 
-            justify;
-            color: $beige;
-            block-size: 50px;
-            background-color: $red;
+    h1{
+        color: $beige;
+        background-color: $red;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        @include md{
+            font-size: 52px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
+        @include lg{
+            font-size: 70px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+    }
 
-        display: grid;
-        grid-template-columns: 15px auto 10px;
-        grid-template-areas: ". section-2 .";
-
-        ul {
-            grid-area: section-2;
-            display: grid;
-            
-            grid-row-gap: 10px;
-            grid-column-gap: 10px;
-            
-
-            @include md{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                        "gallery-1"
-                        "gallery-2" 
-                        "gallery-3"
-                        "gallery-4";
-            }
-
-            @include lg{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                "gallery-1"
-                "gallery-2" 
-                "gallery-3"
-                "gallery-4";
-            }
-
-            li {
-                background-size: cover;
-                height: 100%;
-            }
+    #section-2-content{
+        ul{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 70px;
         
-            #gallery-1{
-                background-image: url('../img/parade.jpg');
-                background-position-y: -120px;
-                height: 500px;
-                background-repeat: no-repeat;
-
-                @include md {
-                    grid-area: gallery-1;
-                    height: 500px;
-                    
-                }
-
-                @include lg{
-                    grid-area: gallery-1;
-                    height: 500px;
-                }
-            }
-
-            #gallery-2{
-                background-image: url('../img/cars.jpg');
-                height: 500px;
-
-                @include md{
-                    grid-area: gallery-2;
-                    height: 500px;
-                }
-
-                @include lg{
-                    grid-area: gallery-2;
-                    height: 500px;
-                }
-            }
-
-            #gallery-3{
-                background-image: url('../img/band.jpg');
-                height: 500px;
-
-                @include md {
-                    grid-area: gallery-3;
-                    height: 500px;
-                }
-
-                @include lg{
-                    grid-area: gallery-3;
-                    height: 500px;
-                }
-            }
-            #gallery-4{
-                background-image: url('../img/pastamaking.jpg');
-                height: 500px;
-
-                @include md {
-                    grid-area: gallery-4;
-                    height: 500px;
-                }
-
-                @include lg{
-                    grid-area: gallery-4;
-                    height: 500px;
-                }
-            }
-
         }
     }
 

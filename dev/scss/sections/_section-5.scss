@@ -2,18 +2,17 @@
     Section 5
 ============= */
 #section-5{
-    background-color: $beige;
-
-    background-image: url('../img/produce.jpg');
-    background-size: cover;
+    background-image: url("../img/produce.jpg");
     background-position: center;
-    height: 250px;
-   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 215px;
+
     @include md{
-        height: 512px;
-    } 
+        height: 500px;
+    }
 
     @include lg{
-        height: 500px;
+        height: 700px;
     }
 }
