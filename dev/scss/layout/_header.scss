@@ -9,14 +9,6 @@
         background-position: center;
         height: 500px;
 
-        @include md{
-            height: 512px;
-        } 
-
-        @include lg{
-            height: 800px;
-        }
-
 
     }   
     h1{
@@ -24,5 +16,19 @@
        /* block-size: 50px;*/
         background-color: $red;
         text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        @include md{
+            font-size: 52px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        @include lg{
+            font-size: 70px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
     }
 }

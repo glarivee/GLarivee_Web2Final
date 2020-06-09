@@ -30,6 +30,115 @@
             padding-right: 30px;
             padding-top: 30px;
             padding-bottom: 70px;
+
+            @include md{
+                padding-top: 90px;
+                display: grid;
+                gap: 100px;
+                grid-template-columns: auto 200px 200px auto;
+                grid-template-areas: ". E1 E2 .";
+            }
+
+            @include lg{
+                padding-top: 90px;
+                display: grid;
+                gap: 100px;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: auto 300px 300px auto;
+                grid-template-areas: 
+                ". E2 E3 ."
+                ". E4 E1 .";
+            }
+
+
+            li{
+                h2{
+                    color: $red; 
+                    text-align: center; 
+                }
+    
+                p{ 
+                    text-align: justify; 
+                    padding-bottom: 20px;
+                }
+            }
+
+            #E1{
+                aside{
+                    background-image: url(../img/pastamaking.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 160px;
+                    width: 160px;
+                    margin-left: 150px;
+                    margin-bottom: 20px;
+
+                    @include md{
+                        margin-left: 15px; 
+                    }
+
+                    @include lg{
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                
+                grid-area: E1;
+            }
+
+            #E2{
+                aside{
+                    background-image: url(../img/parade.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 160px;
+                    width: 160px;
+                    margin-left: 150px;
+                    margin-bottom: 20px;
+
+                    @include md{
+                        margin-left: 15px; 
+                    }
+
+                    @include lg{
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                grid-area: E2;
+            }
+
+            #E3{
+                aside{
+                    @include lg{
+                        background-image: url(../img/cars.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-bottom: 20px;
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                grid-area: E3;
+            }
+
+            #E4{
+                aside{
+                    @include lg{
+                        background-image: url(../img/band.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-bottom: 20px;
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                grid-area: E4;
+            }
         
         }
     }

@@ -29,3 +29,26 @@ ul{
     }
 }
 
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+.show-for-lg{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+
+.show-for-sm{
+    display: block;
+    @include md{
+        display: none;
+    }
+}
+
+
+
