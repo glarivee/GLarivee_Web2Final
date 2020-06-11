@@ -48,14 +48,13 @@
         }
 
         h2{
-            background-color: $green;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
             color: $beige;
+            background-color: $green;
+            padding: 15px 32px;
             text-align: center;
+            display: inline-block;
             font-size: 16px;
+            align-content: center;
         }
     }
 }
