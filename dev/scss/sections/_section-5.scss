@@ -51,10 +51,14 @@
             color: $beige;
             background-color: $green;
             padding: 15px 32px;
-            text-align: center;
+            // text-align: center;
             display: inline-block;
+            position: absolute;
+            left: 50%;
             font-size: 16px;
-            align-content: center;
+            // align-content: center;
         }
+
+        padding-bottom: 75px;
     }
 }

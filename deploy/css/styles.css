@@ -472,11 +472,14 @@ header {
     Footer
 ============= */
 footer div {
-  background-color: #97132B; }
+  background-color: #97132B;
+  height: 125px; }
   footer div #logo {
     background-image: url("../img/logo.svg");
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
     background-color: #97132B;
     height: 50px; }
   @media (min-width: 768px) {
@@ -728,34 +731,36 @@ footer div {
         font-size: 70px;
         padding-top: 45px;
         padding-bottom: 45px; } }
-  #section-5 div p {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 16px; }
-    @media (min-width: 768px) {
-      #section-5 div p {
-        padding-left: 50px;
-        padding-right: 50px;
-        font-size: 24px;
-        padding-top: 60px;
-        padding-bottom: 60px; } }
-    @media (min-width: 992px) {
-      #section-5 div p {
-        padding-left: 130px;
-        padding-right: 130px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        font-size: 24px; } }
-  #section-5 div h2 {
-    color: #FBF2E9;
-    background-color: #2C5A28;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    align-content: center; }
+  #section-5 div {
+    padding-bottom: 75px; }
+    #section-5 div p {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 16px; }
+      @media (min-width: 768px) {
+        #section-5 div p {
+          padding-left: 50px;
+          padding-right: 50px;
+          font-size: 24px;
+          padding-top: 60px;
+          padding-bottom: 60px; } }
+      @media (min-width: 992px) {
+        #section-5 div p {
+          padding-left: 130px;
+          padding-right: 130px;
+          padding-top: 80px;
+          padding-bottom: 80px;
+          font-size: 24px; } }
+    #section-5 div h2 {
+      color: #FBF2E9;
+      background-color: #2C5A28;
+      padding: 15px 32px;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      font-size: 16px; }
 
 /* =============
     Section 6
