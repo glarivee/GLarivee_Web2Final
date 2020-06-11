@@ -488,7 +488,7 @@ footer div {
 /* =============
     Section 1
 ============= */
-#section-1 {
+#section-1 div {
   background-image: url("../img/hero-car.jpg");
   background-size: cover;
   background-position: center;
