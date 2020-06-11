@@ -2,33 +2,65 @@
     Header
 ============= */
 
-#header{
-    div {
-        background-image: url('../img/hero-car.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 500px;
+header {
+	background-color: $red;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	>div {
+		display: grid;
+		grid-template-areas: "logo burger"
+            "nav nav";
+		grid-template-columns: 80% auto;
+		@include lg {
+			grid-template-areas: "logo nav";
+			grid-template-columns: 20% auto;
+		}
+		#logo-container {
+			grid-area: logo;
+            padding-left: 20px;
+            padding-top: 5px;
+            h1{
+                color: $beige;
+            }
 
-
-    }   
-    h1{
-        color: $beige;
-       /* block-size: 50px;*/
-        background-color: $red;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
-        @include md{
-            font-size: 52px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-        @include lg{
-            font-size: 70px;
-            padding-top: 45px;
-            padding-bottom: 45px;
-        }
-
-    }
+		}
+		#burger-container {
+			align-items: center;
+			color: $beige;  
+			display: flex;
+			grid-area: burger;
+			justify-content: flex-end;
+			padding: 20px;
+			@include lg {
+				display: none !important;
+			}
+			i {
+				cursor: pointer;
+			}
+		}
+		#nav-container {
+			background-color: $red;
+			display: none;
+			grid-area: nav;
+			padding: 20px;
+			ul {
+				li {
+					color: $white;
+					font-family: 'Merriweather', serif;
+					font-size: 1rem;
+					text-align: center;
+					a:hover,
+                    a:active {
+						color: $tan;
+					}
+				}
+			}
+			@include lg {
+				background-color: $red;
+				display: block !important;
+			}
+		}
+	}
 }

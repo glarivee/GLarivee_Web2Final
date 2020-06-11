@@ -1,6 +1,7 @@
 /* =============
     Section 3
 ============= */
+
 #section-3{
     background-color: $beige;
     h1{
@@ -23,42 +24,123 @@
         }
     }
 
-    div{
-        p{
-            padding-left: 25px;
-            padding-right: 25px;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            font-size: 16px;
+    #section-3-content{
+        ul{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 70px;
 
             @include md{
-                padding-left: 50px;
-                padding-right: 50px;
-                font-size: 24px;
-                padding-top: 60px;
-                padding-bottom: 60px;
+                padding-top: 90px;
+                display: grid;
+                gap: 100px;
+                grid-template-columns: auto 200px 200px auto;
+                grid-template-areas: ". E1 E2 .";
             }
-            @include lg{
-                padding-left: 130px;
-                padding-right: 130px;
-                padding-top: 80px;
-                padding-bottom: 80px;
-                font-size: 24px;
-            }
-        }
 
-        aside{
-            background-image: url("../img/map.jpg");
-            background-position: center;
-            background-size: cover;
-            height: 206px;
-
-            @include md{
-                height: 500px;
-            }
             @include lg{
-                height: 650px;
+                padding-top: 90px;
+                display: grid;
+                gap: 100px;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: auto 300px 300px auto;
+                grid-template-areas: 
+                ". E2 E3 ."
+                ". E4 E1 .";
             }
+
+
+            li{
+                h2{
+                    color: $red; 
+                    text-align: center; 
+                }
+    
+                p{ 
+                    text-align: justify; 
+                    padding-bottom: 20px;
+                }
+            }
+
+            #E1{
+                aside{
+                    background-image: url(../img/pastamaking.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 160px;
+                    width: 160px;
+                    margin-left: 150px;
+                    margin-bottom: 20px;
+
+                    @include md{
+                        margin-left: 15px; 
+                    }
+
+                    @include lg{
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                
+                grid-area: E1;
+            }
+
+            #E2{
+                aside{
+                    background-image: url(../img/parade.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 160px;
+                    width: 160px;
+                    margin-left: 150px;
+                    margin-bottom: 20px;
+
+                    @include md{
+                        margin-left: 15px; 
+                    }
+
+                    @include lg{
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                grid-area: E2;
+            }
+
+            #E3{
+                aside{
+                    @include lg{
+                        background-image: url(../img/cars.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-bottom: 20px;
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                grid-area: E3;
+            }
+
+            #E4{
+                aside{
+                    @include lg{
+                        background-image: url(../img/band.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-bottom: 20px;
+                        height: 300px;
+                        width: 300px; 
+                    }
+                }
+                grid-area: E4;
+            }
+        
         }
     }
+
 }

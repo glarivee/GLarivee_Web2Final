@@ -90,16 +90,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/deploy/img/map.jpg": {
 		"ft": 16384,
 		"iS": 330587,
@@ -415,6 +405,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/dev/scss/sections/_section-6.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-6.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -466,6 +469,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-5.html",
+		"oF": 0
+		},
+	"/dev/section-6.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-6.html",
 		"oF": 0
 		},
 	"/README.md": {
